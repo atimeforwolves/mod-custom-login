@@ -590,13 +590,13 @@ public:
                 if (player->GetTeamId() == TEAM_ALLIANCE)
                 {
                     std::ostringstream ss;
-                    ss << "|cffFFFFFF[|cff2897FF Alliance |cffFFFFFF]|cff4CFF00 " << player->GetName() << "|cffFFFFFF has left the game.";
+                    ss << "|cffFFFFFF[|cff2897FF Alliance |cffFFFFFF]|cff4CFF00 " << player->GetName() << "|cffFFFFFF has gone offline.";
                     sWorld->SendServerMessage(SERVER_MSG_STRING, ss.str().c_str());
                 }
                 else
                 {
                     std::ostringstream ss;
-                    ss << "|cffFFFFFF[|cffFF0000 Horde |cffFFFFFF]|cff4CFF00 " << player->GetName() << "|cffFFFFFF has left the game.";
+                    ss << "|cffFFFFFF[|cffFF0000 Horde |cffFFFFFF]|cff4CFF00 " << player->GetName() << "|cffFFFFFF has gone offline.";
                     sWorld->SendServerMessage(SERVER_MSG_STRING, ss.str().c_str());
                 }
             }
